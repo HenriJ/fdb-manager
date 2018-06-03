@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:import/recommended",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
+  ],
+  "parser": "babel-eslint",
+  "plugins": ["flowtype", "react", "prettier"],
+  "rules": {
+    "linebreak-style": 0,
+    "react/jsx-filename-extension": 0,
+    "react/require-default-props": 0,
+    "import/prefer-default-export": 0,
+    "arrow-body-style": 0,
+    "no-restricted-globals": 0,
+    "no-alert": 0,
+    "react/no-multi-comp": 0,
+    "import/unambiguous": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/alt-text": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-plusplus": 0,
+    "react/prefer-stateless-function": 0 // Later...
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}

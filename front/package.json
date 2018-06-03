@@ -1,0 +1,37 @@
+{
+  "name": "fdb-manager",
+  "version": "-",
+  "private": true,
+  "scripts": {
+    "start": "cross-env REACT_APP_API_ROOT=http://localhost:8080/api react-scripts start",
+    "build": "cross-env REACT_APP_API_ROOT=/api react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "flow-check": "flow version && flow check",
+    "prettier-check": "prettier --debug-check src/**/*.js"
+  },
+  "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.43",
+    "color": "^3.0.0",
+    "material-ui": "next",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-json-tree": "^0.11.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.71.0",
+    "prettier": "1.12.1"
+  }
+}
