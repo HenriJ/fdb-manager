@@ -1,4 +1,4 @@
-package io.jhd.oss.fdb.api;
+package io.jhd.oss.fdb.resources.directories;
 
 import java.util.ArrayList;
 import java.util.List;

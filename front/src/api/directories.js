@@ -10,8 +10,8 @@ export type DirectoryListResponse = {
 export async function list(
   directory: Array<string>
 ): Promise<DirectoryListResponse> {
-  const d =
-    directory.length > 0 ? encodeURIComponent(JSON.stringify(directory)) : "";
-  const req = await fetch(`${API_ROOT}/directories/${d}`);
+  const req = await fetch(
+    `${API_ROOT}/directories/${encodeURIComponent(JSON.stringify(directory))}`
+  );
   return req.json();
 }

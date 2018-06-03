@@ -1,4 +1,4 @@
-package io.jhd.oss.fdb.resources;
+package io.jhd.oss.fdb.resources.cluster;
 
 import com.apple.foundationdb.Database;
 import io.jhd.oss.fdb.utils.BinaryCodec;

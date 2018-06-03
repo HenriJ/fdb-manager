@@ -14,7 +14,7 @@ public class FdbManagerConfiguration extends Configuration {
         setServerFactory(simpleServerFactory);
 
         DefaultLoggingFactory defaultLoggingFactory = new DefaultLoggingFactory();
-        defaultLoggingFactory.setLevel("WARN");
+        defaultLoggingFactory.setLevel("INFO");
         defaultLoggingFactory.setLoggers(ImmutableMap.of(
                 "io.jhd.oss.fdb", TextNode.valueOf("DEBUG"),
                 "io.dropwizard.setup.AdminEnvironment", TextNode.valueOf("ERROR")
